@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+<h1>Criar atividade</h1>
+<hr>
+<br>
+<form action="{{url_for('criar_atividade')}}" method="post">
+<label>
+    Nome Completo:
+    <input name="form_nome" type="text" placeholder="Digite seu nome" required>
+</label>
+<br>
+<br>
+<label>
+    Data de criação:
+    <input name="form_data" type="date" placeholder="Informe a data de criação" required>
+</label>
+<br>
+<br>
+<label>Qual tipo de atividade gostaria de criar?</label>
+<br>
+    <br>
+<label>
+    <input type='checkbox' name="form_tipo" value="Atividade Avaliativa">Atividade Avaliativa
+    <br>
+    <input type='checkbox' name="form_tipo" value="Atividade Diagnóstico">Atividade Diagnóstica
+    <br>
+    <input type='checkbox' name="form_tipo" value="Atividade Coletiva">Atividade Coletiva
+    <br>
+    <input type='checkbox' name="form_tipo" value="Atividade para Casa">Atividade para Casa
+
+</label>
+<br>
+<br>
+    <button type="submit">Salvar</button>
+    <button type="reset">Limpar</button>
+</form>
+
+
+
+{% endblock conteudo %}

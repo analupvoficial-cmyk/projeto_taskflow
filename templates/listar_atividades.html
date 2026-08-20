@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+<h1>Listar atividade</h1>
+
+{% for atividade in dados_atividade %}
+{{atividade.nome}}<br>
+{{atividade.data}}<br>
+{{atividade.tipo}}<br>
+{% endfor %}
+{% endblock conteudo %}

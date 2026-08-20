@@ -1,0 +1,70 @@
+body {
+
+    background-color: #f4ecf0;
+}
+
+h1 {
+    text-align: left;
+    color: lightpink;
+    text-shadow: hotpink 1px 1px;
+    background-color: #edd2df;
+    font-family: "Lobster Two", sans-serif;
+}
+
+h1:hover {
+    color: hotpink;
+    text-shadow: lighpink 1px 1px;
+}
+
+.heart {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Mantém proporção da imagem */
+    /* Recorte no formato de coração */
+    clip-path: path("M150 270 L30 150 A60 60 0 1 1 150 90 A60 60 0 1 1 270 150 Z");
+    /* Suporte para navegadores antigos */
+    -webkit-clip-path: path("M150 270 L30 150 A60 60 0 1 1 150 90 A60 60 0 1 1 270 150 Z");
+}
+
+a:hover {
+    color: hotpink;
+    text-shadow: lightpink 1px 1px;
+}
+a {
+    text-decoration: none;
+    color: lightpink;
+    font-size: 18px;
+    text-shadow: hotpink 1px 1px;
+    font-family: "Comic Sans MS";
+
+}
+
+hr {
+    border: 1px solid hotpink;
+
+}
+
+label {
+    text-decoration: none;
+    color: lightpink;
+    font-size: 16px;
+    text-shadow: hotpink 1px 1px;
+    font-family: "Comic Sans MS";
+
+}
+
+button{
+    background-color: #edd2df;
+    color: hotpink;
+    border: hotpink 1px solid;
+    font-family: "Comic Sans MS";
+
+}
+
+input {
+    background-color: #edd2df;
+    color: hotpink;
+    border: hotpink 1px solid;
+    font-family: "Comic Sans MS";
+}
+
