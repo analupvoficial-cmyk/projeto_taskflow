@@ -11,6 +11,7 @@ base_fake = []
 @app.route('/')
 def index():
     return render_template('index.html')
+
 @app.route('/atividades/criar', methods=['GET','POST'])
 def criar_atividade():
     if request.method == 'POST':

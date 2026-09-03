@@ -1,14 +1,20 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
 body {
 
     background-color: #f4ecf0;
 }
 
 h1 {
-    text-align: left;
     color: lightpink;
-    text-shadow: hotpink 1px 1px;
-    background-color: #edd2df;
-    font-family: "Lobster Two", sans-serif;
 }
 
 h1:hover {
@@ -16,15 +22,7 @@ h1:hover {
     text-shadow: lighpink 1px 1px;
 }
 
-.heart {
-    width: 300px;
-    height: 300px;
-    object-fit: cover; /* Mantém proporção da imagem */
-    /* Recorte no formato de coração */
-    clip-path: path("M150 270 L30 150 A60 60 0 1 1 150 90 A60 60 0 1 1 270 150 Z");
-    /* Suporte para navegadores antigos */
-    -webkit-clip-path: path("M150 270 L30 150 A60 60 0 1 1 150 90 A60 60 0 1 1 270 150 Z");
-}
+
 
 a:hover {
     color: hotpink;
@@ -39,10 +37,7 @@ a {
 
 }
 
-hr {
-    border: 1px solid hotpink;
 
-}
 
 label {
     text-decoration: none;
@@ -68,3 +63,41 @@ input {
     font-family: "Comic Sans MS";
 }
 
+.principal{
+    text-align: left;
+    color: #ff66be;
+    text-shadow: #ff66be 1px 1px;
+    background-color: #fadde7;
+    font-family: "Lobster Two", sans-serif;
+    display: flex;
+    padding: 0px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 42;
+}
+.base{
+    text-align: left;
+    color: lightpink;
+    text-shadow: hotpink 1px 1px;
+    background-color: #fff3f9;
+    font-family: "Lobster Two", sans-serif;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.criar_atv{
+    background: #ffffff;
+    height: 400px;
+    width: 800px;
+    text-align: center;
+    border: #f6a5c1 3px solid;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 126px);
+}

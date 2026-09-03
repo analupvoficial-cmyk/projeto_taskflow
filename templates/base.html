@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Base</title>
@@ -10,24 +10,23 @@
 
 </head>
 <body>
-<h1>Base</h1>
-<hr>
-<br>
-<img class="heart" src="https://i.pinimg.com/736x/d2/15/3d/d2153d51121d2f62c5be5d36bf3909d5.jpg" width="100px">
-<img class="heart" src="https://i.pinimg.com/736x/35/80/32/3580322c7f18d61de1c8cf4e19dc9eb4.jpg" width="100px">
-<img class="heart" src="https://i.pinimg.com/1200x/72/25/aa/7225aa72a2536304109772fc7cfac224.jpg" width="100px">
+<div class="principal">
+    <h1>Base</h1>
+</div>
 
-<br>
-<br>
-<a href="{{url_for('index')}}">Início</a>
-<br>
-<a href="{{url_for('criar_atividade')}}">Criar atividade</a>
-<br>
-<a href="{{url_for('listar_atividades')}}">Listar atividades</a>
-<br>
-<a href="{{url_for('pessoa')}}">Pessoa</a>
+<div class="base">
 
-{% block conteudo %}
-{% endblock conteudo %}
+
+    <a href="{{url_for('index')}}">Início</a>
+
+    <a href="{{url_for('criar_atividade')}}">Criar atividade</a>
+
+    <a href="{{url_for('listar_atividades')}}">Listar atividades</a>
+
+    <a href="{{url_for('pessoa')}}">Pessoa</a>
+</div>
+    {% block conteudo %}
+    {% endblock conteudo %}
+
 </body>
 </html>
