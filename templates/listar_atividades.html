@@ -1,11 +1,19 @@
 {% extends 'base.html' %}
 {% block conteudo %}
 
-<h1>Listar atividade</h1>
+<div class="blocos">
+    <h1>Listar atividade</h1>
+    <div class="cards">
+        {% for atividade in dados_atividade %}
+        <div class="listar">
+            <p>{{atividade.nome}}</p>
+            <p>{{atividade.data}}</p>
+            <p>{{atividade.tipo}}</p>
+        </div>
+    {% endfor %}
+    </div>
 
-{% for atividade in dados_atividade %}
-{{atividade.nome}}<br>
-{{atividade.data}}<br>
-{{atividade.tipo}}<br>
-{% endfor %}
+
+</div>
+
 {% endblock conteudo %}
