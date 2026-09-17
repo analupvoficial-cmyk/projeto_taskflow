@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<div class="container">
+
+    <div class="criar_atv">
+        <h1>Novo Tipo</h1>
+        <hr>
+        <form action="{{url_for('criar_tipo')}}" method="post">
+            <label>
+                Tipo:
+                <input name="form_tipo" type="text" placeholder="Informe o nome do novo Tipo" required>
+            </label>
+            <div class="botao">
+                <button type="submit">Salvar</button>
+                <button type="reset">Limpar</button>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+{% endblock conteudo %}

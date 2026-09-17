@@ -12,24 +12,29 @@
 <body>
 <div class="principal">
     <h1>Base</h1>
-
 </div>
 
-
-
-<div class="base">
-
+<div class="main">
+    <div class="base">
 
     <a href="{{url_for('index')}}">Início</a>
 
-    <a href="{{url_for('criar_atividade')}}">Criar atividade</a>
 
-    <a href="{{url_for('listar_atividades')}}">Listar atividades</a>
+
+    <a href="{{url_for('listar_atividades')}}">Atividades</a>
 
     <a href="{{url_for('pessoa')}}">Pessoa</a>
+
+    <a href="{{url_for('tipo')}}">Tipos</a>
+
+    <a href="{{url_for('recurso')}}">Recursos</a>
+
 </div>
+
+ <div class="conteudo">
     {% block conteudo %}
     {% endblock conteudo %}
-
+ </div>
+</div>
 </body>
 </html>

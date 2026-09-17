@@ -1,8 +1,13 @@
 {% extends 'base.html' %}
 {% block conteudo %}
+<div class="pai">
+    <div class="criar">
+    <a href="{{url_for('criar_atividade')}}">Criar atividade</a>
+    </div>
+</div>
 
 <div class="blocos">
-    <h1>Listar atividade</h1>
+    <h1>Listar atividades</h1>
     <div class="cards">
         {% for atividade in dados_atividade %}
         <div class="listar">

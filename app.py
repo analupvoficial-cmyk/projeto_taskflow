@@ -6,8 +6,9 @@ app = Flask(__name__)
 
 # base de dados fake
 base_fake = []
+
 # rotas
-# toda rora é acompanhada de uma função (def)
+# toda rota é acompanhada de uma função (def)
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -28,7 +29,7 @@ def criar_atividade():
         print(f'dados: {dados}')
         base_fake.append(dados)
         print(f'base_fake: {base_fake}')
-        return render_template('criar_atividade.html',dados_atividade=base_fake)
+        return render_template('criar_atividade.html', dados_atividade=base_fake)
 
     return render_template('criar_atividade.html')
 
@@ -40,7 +41,20 @@ def listar_atividades():
 def pessoa():
     return render_template('pessoa.html')
 
+# --- NOVAS ROTAS ADICIONADAS PARA CORRIGIR O ERRO ---
+@app.route('/tipos')
+def tipo():
+    return render_template('tipo.html')
 
+@app.route('/recursos')
+def recurso():
+    return render_template('recurso.html')
+
+
+@app.route('/tipo/novo')
+def criar_tipo():
+    return render_template('criar_tipo.html')
+# ----------------------------------------------------
 
 # iniciar aplicação web
 if __name__ == '__main__':
